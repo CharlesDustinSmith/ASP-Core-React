@@ -1,0 +1,12 @@
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/bin/Debug/net7.0/Domain.deps.json
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/bin/Debug/net7.0/Domain.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/bin/Debug/net7.0/Domain.pdb
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/refint/Domain.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/Domain.pdb
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/Debug/net7.0/ref/Domain.dll

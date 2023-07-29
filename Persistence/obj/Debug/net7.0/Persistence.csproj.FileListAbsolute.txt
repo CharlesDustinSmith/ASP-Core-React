@@ -1,0 +1,15 @@
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/bin/Debug/net7.0/Persistence.deps.json
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/bin/Debug/net7.0/Persistence.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/bin/Debug/net7.0/Persistence.pdb
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/bin/Debug/net7.0/Domain.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/bin/Debug/net7.0/Domain.pdb
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfoInputs.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfo.cs
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.csproj.CopyComplete
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/refint/Persistence.dll
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/Persistence.pdb
+/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/Debug/net7.0/ref/Persistence.dll

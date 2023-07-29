@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/API/API.csproj": {}
+  },
+  "projects": {
+    "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/API/API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/API/API.csproj",
+        "projectName": "API",
+        "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/API/API.csproj",
+        "packagesPath": "/home/charlessmith/.nuget/packages/",
+        "outputPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charlessmith/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/Application.csproj": {
+                "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/charlessmith/.dotnet-sdk-7.0.100-linux-x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/Application.csproj",
+        "packagesPath": "/home/charlessmith/.nuget/packages/",
+        "outputPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charlessmith/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj"
+              },
+              "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/Persistence.csproj": {
+                "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/charlessmith/.dotnet-sdk-7.0.100-linux-x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj",
+        "packagesPath": "/home/charlessmith/.nuget/packages/",
+        "outputPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charlessmith/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/charlessmith/.dotnet-sdk-7.0.100-linux-x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/Persistence.csproj",
+        "packagesPath": "/home/charlessmith/.nuget/packages/",
+        "outputPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charlessmith/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/home/charlessmith/c# development/ReactPractice/Project/Reactivities/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/charlessmith/.dotnet-sdk-7.0.100-linux-x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
