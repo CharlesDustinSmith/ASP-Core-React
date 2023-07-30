@@ -14,3 +14,29 @@ dotnet ef migrations add InitialCreate -s API -p Persistence
 ```sh
 npx create-react-app client-app --use-npm --template typescript
 ```
+
+## Why use React
+1. It is a trusted tool by profitable companies like Facebook (creators), Netflix, Instagram, and Airbnb
+2. React is fast
+3. React is easy to learn
+4. It's just a library
+5. Uses a Virtual-DOM, which simulates the DOM, causing the DOM not to have to be repaint everytime you change something.
+6. Stack overflow developer survey 2020 - most loved web frameworks 
+    1. ASP.NET Core = 70.7%
+    2. React.js = 68.9%
+    3. Vue.js = 66.0%
+    4. Express = 61.9%
+    5. Gatsby = 60.7% 
+    6. Spring = 57.7%
+    7. Django = 55.3%
+    8. Flask = 54.4% 
+    9. Angular = 54.0%
+    10. Laravel = 51.5%
+    11. Ruby on Rails = 49.3%
+    12. Symfony = 45.6%
+    13. ASP.NET = 36.9%
+    14. jQuery = 36.5%
+    15. Drupal = 25.5%
+    16. Angular.js = 24.1%
+7. It's just javascript (*or typescript* which is compiled to javascript)
+
