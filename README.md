@@ -40,3 +40,15 @@ npx create-react-app client-app --use-npm --template typescript
     16. Angular.js = 24.1%
 7. It's just javascript (*or typescript* which is compiled to javascript)
 
+## Why use Typescript 
+|Typescript Rocks!|Typescript is annoying!|
+|-----------------|-----------------------|
+|Strong Typing    |More upfront code      |
+|Object orientated|3rd Part libraries     |
+|Better intellisense|Strict mode is... strict!|
+|Access modifiers |                       |
+|Future JS Features|                      |
+|Catches silly mistakes in dev|           |
+|3rd Party libraries|                     |
+|Easy to learn if you know JS|            |
+|Much improved in React|                  |
