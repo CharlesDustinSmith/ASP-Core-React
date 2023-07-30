@@ -7,6 +7,7 @@
 // We will use an object relationship mapper (ORM)
 // This provides us with a layer of abstraction away from
 // our database. 
+
 public class Activity
 {
     public Guid Id { get; set; }
