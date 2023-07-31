@@ -13,7 +13,15 @@ builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+// Enabling CORS for localhost:3000 port (Creating the CORS policy)
+builder.Services.AddCors(opt => {
+    opt.AddPolicy("CorsPolicy", policy => {
+        policy
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .WithOrigins("http://localhost:3000");
+    });
+});
 
 var app = builder.Build();
 
@@ -23,6 +31,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Must enable cors middleware before all of the following things. (Adding the CORS policy) 
+app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 

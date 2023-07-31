@@ -10,7 +10,7 @@ function App() {
 
   // The '[]' was used to add some depenedency making it only call once
   useEffect(() => {
-    axios.get("http://localhost:5000/api/activites/")
+    axios.get("http://localhost:5000/api/activities")
     .then(response => {
       console.log(response);
       setActivities(response.data);
