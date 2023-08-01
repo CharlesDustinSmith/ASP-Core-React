@@ -54,16 +54,16 @@ npx create-react-app client-app --use-npm --template typescript
 |Much improved in React|                  |
 
 ## Clean Architecture recommendations 
-[x] Independent from frameworks
-[x] Testable 
-[x] Independent from the interface
-[x] Independent from the database
+- [x] Independent from frameworks \ 
+- [x] Testable
+- [x] Independent from the interface
+- [x] Independent from the database
 
 ## CQRS (Command Query Responsibility Segragation)
 | Command | Query |
 | ------- | ----- |
-| [] Do something | [] Answers a question|
-| [] Modifies State | [] Does not modify State |
-| [] Should not return a value | [] Should return a value |
+| - [ ] Do something | - [ ] Answers a question|
+| - [ ] Modifies State | - [ ] Does not modify State |
+| - [ ] Should not return a value | - [ ] Should return a value |
 
 ![CQRS Single Database](./CQRS-Single-Database.png)
