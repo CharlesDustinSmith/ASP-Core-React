@@ -66,4 +66,7 @@ npx create-react-app client-app --use-npm --template typescript
 | - [ ] Modifies State | - [ ] Does not modify State |
 | - [ ] Should not return a value | - [ ] Should return a value |
 
+### Will be following this model
 ![CQRS Single Database](./CQRS-Single-Database.png)
+### Not following this model but it should be a model to follow in the follow
+![CQRS Read / Write Database](./CQRS-Read-Write-Database.drawio.png)
