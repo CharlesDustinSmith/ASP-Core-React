@@ -3,7 +3,7 @@ using Domain;
 using Persistence;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application
+namespace Application.Activities
 {
     public class List
     {
