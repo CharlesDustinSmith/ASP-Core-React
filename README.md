@@ -78,3 +78,9 @@ cd Application
 dotnet add package MediatR
 dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11.1.0
 ```
+
+## Install Automapper for making Update operation for CRUD easier to deal with
+```sh
+cd Application 
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1
+```
