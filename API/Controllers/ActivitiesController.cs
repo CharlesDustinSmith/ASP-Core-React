@@ -7,9 +7,9 @@ namespace API.Controllers
     public class ActivitiesController : BaseApiController
     {
         [HttpGet]       // Route: api/activities
-        public async Task<ActionResult<List<Activity>>> GetActivities(CancellationToken ct)
+        public async Task<ActionResult<List<Activity>>> GetActivities(CancellationToken cToken)
         {
-            return await Mediator.Send(new List.Query(), ct);
+            return await Mediator.Send(new List.Query(), cToken);
         }
 
         [HttpGet("{id}")]       // api/activites/fdfkfdfk
