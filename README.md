@@ -70,3 +70,11 @@ npx create-react-app client-app --use-npm --template typescript
 ![CQRS Single Database](./CQRS-Single-Database.png)
 ### Not following this model but it should be a model to follow in the follow
 ![CQRS Read / Write Database](./CQRS-Read-Write-Database.drawio.png)
+
+
+## Install mediatR.Extensions.Microsoft.DependencyInjection
+```sh
+cd Application
+dotnet add package MediatR
+dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11.1.0
+```
