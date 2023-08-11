@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { IActivity } from '../models/activity';
 import NavBar from './NavBar';
 import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
+import agent from '../api/agent';
 
-import axios from 'axios';
 import { Container } from 'semantic-ui-react';
 import { v4 as uuid } from 'uuid';
-import { Console } from 'console';
+
 
 function App() {
   const [activities, setActivities] = useState<IActivity[]>([]);
@@ -16,9 +16,9 @@ function App() {
 
   // The '[]' was used to add some depenedency making it only call once
   useEffect(() => {
-    axios.get<IActivity[]>("http://localhost:5000/api/activities")
+    agent.Activities.list()
       .then(response => {
-        setActivities(response.data);
+        setActivities(response);
       });
   }, []);
 
