@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Container } from 'semantic-ui-react';
 import { IActivity } from '../models/activity';
 import NavBar from './NavBar';
 import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
 
+import axios from 'axios';
+import { Container } from 'semantic-ui-react';
+import { v4 as uuid } from 'uuid';
+import { Console } from 'console';
 
 function App() {
   const [activities, setActivities] = useState<IActivity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<IActivity | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
+
 
   // The '[]' was used to add some depenedency making it only call once
   useEffect(() => {
@@ -37,10 +40,15 @@ function App() {
   }
 
   function handleCreateOrEditActivity(activity: IActivity) {
-    activity.id ? setActivities([...activities.filter(x => x.id !== activity.id), activity])
-    : setActivities([...activities, activity]);
+    activity.id
+      ? setActivities([...activities.filter(x => x.id !== activity.id), activity])
+      : setActivities([...activities, {...activity, id: uuid()}]);
     setEditMode(false);
     setSelectedActivity(activity);
+  }
+
+  function handleDeleteActivity(id: string) {
+    setActivities([...activities.filter(x => x.id !== id)])
   }
 
 
@@ -56,7 +64,8 @@ function App() {
           editMode={editMode}
           openForm={handleFormOpen}
           closeForm={handleFormClose}
-          createOrEdit={handleCreateOrEditActivity}></ActivityDashboard>
+          createOrEdit={handleCreateOrEditActivity}
+          deleteActivity={handleDeleteActivity}></ActivityDashboard>
       </Container>
     </>
   );
