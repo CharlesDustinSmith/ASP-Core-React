@@ -1,8 +1,26 @@
 import axios, { AxiosResponse } from 'axios';
 import { IActivity } from '../models/activity';
 
+// Method to fake slow loads for simulating what it would actually be like.
+const sleep = (delay: number) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, delay);
+    })
+}
+
 // Setting up base url so that I wouldn't have to type it all the time.
 axios.defaults.baseURL = 'http://localhost:5000/api';
+
+// Using axios interceptors to fake delay on axios request.
+axios.interceptors.response.use(async response => {
+    try {
+        await sleep(1000);
+        return response;
+    } catch(err) {
+        console.log(err);
+        return await Promise.reject(err);
+    } 
+})
 
 const responseBody = <T> (response: AxiosResponse<T>) => response.data;
 

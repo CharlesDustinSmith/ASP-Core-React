@@ -6,19 +6,27 @@ import agent from '../api/agent';
 
 import { Container } from 'semantic-ui-react';
 import { v4 as uuid } from 'uuid';
+import LoadingComponent from './LoadingComponent';
 
 
 function App() {
   const [activities, setActivities] = useState<IActivity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<IActivity | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
 
   // The '[]' was used to add some depenedency making it only call once
   useEffect(() => {
     agent.Activities.list()
       .then(response => {
+        let activities: IActivity[] = [];
+        response.forEach(activity => {
+          activity.date = activity.date.split('T')[0];
+          activities.push(activity);
+        })
         setActivities(response);
+        setLoading(false);
       });
   }, []);
 
@@ -51,6 +59,7 @@ function App() {
     setActivities([...activities.filter(x => x.id !== id)])
   }
 
+  if(loading) return <LoadingComponent content='Loading app'></LoadingComponent>
 
   return (
     <>
