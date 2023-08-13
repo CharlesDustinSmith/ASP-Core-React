@@ -84,3 +84,8 @@ dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11
 cd Application 
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1
 ```
+## Packages that are need up to the Axios section 
+```sh
+npm i axios semantic-ui-react semantic-ui-css uuid
+```
+
