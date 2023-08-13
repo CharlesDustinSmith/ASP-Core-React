@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import { IActivity } from '../models/activity';
+import { request } from 'http';
 
 // Method to fake slow loads for simulating what it would actually be like.
 const sleep = (delay: number) => {
@@ -32,7 +33,11 @@ const requests = {
 }
 
 const Activities = {
-    list: () => requests.get<IActivity[]>('/activities')
+    list: () => requests.get<IActivity[]>('/activities'), 
+    detail: (id: string) => requests.get<IActivity>(`/activities/${id}`),
+    create: (activity: IActivity) => requests.post<IActivity>('/activities', activity),
+    update: (activity: IActivity) => requests.put<IActivity>(`/activities/${activity.id}`, activity),
+    delete: (id: string) => requests.del<IActivity>(`/activities/${id}`)
 }
 
 const agent = {
