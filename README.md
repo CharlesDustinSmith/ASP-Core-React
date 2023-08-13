@@ -84,8 +84,176 @@ dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11
 cd Application 
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1
 ```
-## Packages that are need up to the Axios section 
+# Packages that are need up to the Axios section 
 ```sh
 npm i axios semantic-ui-react semantic-ui-css uuid
 ```
+# Why MobX?
+Working with #mobx is basically a continuous loop of me going "This is way too simple, it definitely won't work" only to be proven wrong.
+I have built big apps with MobX already and comparing to the one before that which was using Redux, it is simpler to read and much easier to reason about.
 
+## MobX Core functions
+[X] Observables
+[X] Actions
+[X] Computed properties
+[X] Reactions
+[X] AutoRun
+
+## MobX Observable
+```javascript
+import { makeObservable, observable } from "mobx";
+import { createContext } from "react";
+
+class DemoStore {
+    firstName = 'Bob';
+    lastName = 'Smith';
+
+    constructor() {
+        makeObservable(this, {
+            firstName: observable,
+            lastName: observable
+        })
+    }
+}
+
+export default createContext(new DemoStore());
+```
+## MobX Action (We use actions to update observable states)
+```javascript
+import { action, makeObservable, observable } from "mobx";
+import { createContext } from "react";
+
+class DemoStore {
+    firstName = 'Bob';
+    lastName = 'Smith';
+
+    constructor() {
+        makeObservable(this, {
+            firstName: observable, 
+            lastName: observable,
+            setFirstName: action
+        })
+    }
+
+    setFirstName = (name: string) => {
+        this.firstName = name;
+    }
+}
+
+export default createContext(new DemoStore());
+```
+## MobX Computed 
+```javascript 
+import { action, computed, makeObservable, observable } from "mobx";
+import { createContext } from "react";
+
+class DemoStore {
+    firstName = 'Bob';
+    lastName = 'Smith';
+
+    constructor() {
+        makeObservable(this, {
+            firstName: observable, 
+            lastName: observable, 
+            setFirstName: action, 
+            fullName: computed
+        })
+    }
+
+    get fullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+export default createContext(new DemoStore());
+```
+
+## MobX MakeAutoObservable 
+```javascript 
+import {  makeAutoObservable } from "mobx";
+import { createContext } from "react";
+
+class DemoStore {
+    firstName = 'Bob';
+    lastName = 'Smith';
+
+    constructor() {
+        makeAutoObservable(this);
+    }
+
+    get fullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+
+    setFirstName = (name: string) => {
+        this.firstName = name;
+    }
+}
+
+export default createContext(new DemoStore());
+```
+
+## MobX Reaction
+```javascript 
+import { makeAutoObservable, reaction } from "mobx";
+import { createContext } from "react";
+
+class DemoStore {
+    firstName = 'Bob';
+    lastName = 'Smith';
+
+    constructor() {
+        makeAutoObservable(this);
+
+        reaction(
+            () => this.firstName,
+            (firstName) => console.log(firstName)
+        )
+    }
+
+    setFirstName = (name: string) => {
+        this.firstName = name;
+    }
+
+    get fullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+export default createContext(new DemoStore());
+```
+
+## React Context
+```javascript 
+import React, { useContext } from 'reaact';
+import DemoStore from '../app/demoStore';
+
+export default function Demo() {
+    const demoStore = useContext(DemoStore);
+    const { fullName } = demoStore;
+
+    return (
+        <div>
+            <h1>Hello {fullName}</h1>
+        </div>
+    )
+}
+```
+
+## React Context pt 2
+```javascript 
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'reaact';
+import DemoStore from '../app/demoStore';
+
+export default observer( function Demo() {
+    const demoStore = useContext(DemoStore);
+    const { fullName } = demoStore;
+
+    return (
+        <div>
+            <h1>Hello {fullName}</h1>
+        </div>
+    )
+}) 
+```
