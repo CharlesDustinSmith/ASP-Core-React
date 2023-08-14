@@ -257,3 +257,7 @@ export default observer( function Demo() {
     )
 }) 
 ```
+# Installing Mobx 
+```sh 
+npm i mobx mobx-react-lite
+```
